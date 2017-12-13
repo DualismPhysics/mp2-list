@@ -14,7 +14,7 @@ struct Node
 };
 
 class List
-{
+{Node* head
   // любые поля
 public:
   List() {};
@@ -23,7 +23,7 @@ public:
   ~List() {};
 
   void InserToHead(const DataType& d); // вставить элемент d первым
-  void InserToTail(const DataType& d); // вставить элемент d последним
+  void InserToTail(const DataType d); // вставить элемент d последним
   void InsertAfter(Node* node, const DataType& d); // вставить элемент d после звена node
   void Delete(const DataType& d); // удалить звено со значением data = d
   Node* Search(const DataType& d); // найти указатель на звено со значением data = d
